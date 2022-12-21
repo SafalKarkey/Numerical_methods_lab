@@ -5,6 +5,14 @@
 #define f(x) 3*x-cos(x)-1
 #define df(x) 3+sin(x)
 
+// float f(float x){
+//     return 3*x - cos(x) - 1;
+// }
+
+// float df(float x){
+//     return 3 + sin(x);
+// }
+
 int main(){
     float x0, x1, error;
     float f0, f1, df0, df1;
