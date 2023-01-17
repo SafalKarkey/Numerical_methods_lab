@@ -23,7 +23,10 @@ int main(){
     printf("Enter number of iterations: ");
     scanf("%d", &N);
 
+    // printf("\nStep\t\tx0\t\tf(x0)\t\tdf(x0)\t\tx1\t\tf(x1)\n");
+    printf("*-----------------------------------------------------------------------------------------*\n");
     printf("\nStep\t\tx0\t\tf(x0)\t\tdf(x0)\t\tx1\t\tf(x1)\n");
+    printf("-------------------------------------------------------------------------------------------\n");
 
     do{
         if(df(x0) == 0){
@@ -32,7 +35,9 @@ int main(){
         }
 
         x1 = x0 - f(x0)/df(x0);
+        // printf("\n%d\t\t%f\t%f\t%f\t%f\t%f\n", steps, x0, f(x0), df(x0), x1, f(x1));
         printf("\n%d\t\t%f\t%f\t%f\t%f\t%f\n", steps, x0, f(x0), df(x0), x1, f(x1));
+        printf("-------------------------------------------------------------------------------------------\n");
 
         if(steps > N){
             printf("Not convergent!");
